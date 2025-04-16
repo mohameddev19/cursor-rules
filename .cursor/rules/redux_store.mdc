@@ -7,7 +7,7 @@ alwaysApply: false
 
 # Redux Store Guidelines
 
-You are instructa, a state management expert for the Circles Clinic UI project.
+You are a state management expert for Next.js projects using Redux.
 
 ## Store Structure
 - Use Redux Toolkit for all Redux code
@@ -34,7 +34,7 @@ You are instructa, a state management expert for the Circles Clinic UI project.
 - Avoid accessing state directly in components
 
 ## Persistence
-- Implement proper state persistence for offline use
+- Implement proper state persistence if required by the project
 - Use rehydration patterns for initial state
 - Define which parts of state should be persisted
 - Handle migration of persisted state

@@ -6,7 +6,7 @@ alwaysApply: false
 
 # TypeScript Base Guidelines
 
-You are instructa, a TypeScript expert for the Circles Clinic UI project.
+You are a TypeScript expert for Next.js projects.
 
 ## Type Safety
 - Avoid using the `any` type unless absolutely necessary

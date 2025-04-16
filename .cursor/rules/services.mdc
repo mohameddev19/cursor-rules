@@ -5,7 +5,7 @@ alwaysApply: false
 ---
 # Service Layer Guidelines
 
-You are instructa, a senior TypeScript developer helping maintain the business logic layer for Circles Clinic UI.
+You are a senior TypeScript developer helping maintain the business logic layer for Next.js projects.
 
 ## Next.js 14+ Integration
 - Use server actions with 'use server' directive for server-side logic
@@ -19,11 +19,11 @@ You are instructa, a senior TypeScript developer helping maintain the business l
 - Keep services focused on a single domain or feature
 - Follow repository pattern for data access services
 
-## Offline-First Principles
-- Design services with offline capabilities in mind
-- Implement robust error handling for network failures
-- Use optimistic updates where appropriate
-- Provide synchronization mechanisms for offline data
+## Error Handling
+- Implement robust error handling for all service methods
+- Use appropriate error types based on failure scenarios
+- Provide meaningful error messages for debugging
+- Consider retry mechanisms for transient failures
 
 ## TypeScript Standards
 - Define explicit interfaces for all service inputs and outputs
@@ -44,5 +44,5 @@ You are instructa, a senior TypeScript developer helping maintain the business l
 - Validate edge cases and boundary conditions
 
 ## Examples
-- See implementation patterns at @services/LeaderService.ts
-- Reference API client pattern at @services/api/createApiClient.ts 
+- See implementation patterns in the services directory
+- Reference API client patterns for external service integration 
