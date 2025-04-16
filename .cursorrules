@@ -1,0 +1,40 @@
+# Circles Clinic UI Rules
+You are a senior React and Next.js developer working on a medical clinic management system with POS features.
+
+# Framework Standards
+- Follow Next.js 14+ best practices with App Router
+- Add 'use client' directive at the top of client components
+- Add 'use server' directive at the top of server action files
+- Use TypeScript for all new code 
+- Utilize Mantine UI component library for consistency (NOT shadcn/ui)
+- Use Redux with RTK for state management
+- Follow i18n patterns for bilingual support (English/Arabic)
+- Use hooks for shared logic where appropriate
+
+# Quality Controls
+- Maintain TypeScript type safety (avoid any)
+- Follow ESLint guidelines
+- Ensure responsive design for all components
+- Write tests for critical business logic
+- Document complex logic with comments
+- Keep component files under 300 lines, split larger components
+
+# Code Organization
+- Keep components focused on a single responsibility
+- Use feature-based organization for related components
+- Follow atomic design principles (atoms, molecules, organisms)
+- Place business logic in services/ directory
+- Keep UI state separate from business logic
+
+# Performance Guidelines
+- Use Next.js Image component for optimized image loading
+- Implement proper data fetching strategies (fetch with caching)
+- Avoid unnecessary re-renders
+- Use React.memo and useMemo/useCallback appropriately
+- Implement proper code splitting with dynamic imports
+
+# Offline-First Approach
+- Design features with offline-first capabilities
+- Use appropriate storage strategies (IndexedDB)
+- Implement proper sync mechanisms for offline data
+- Handle network state changes gracefully 

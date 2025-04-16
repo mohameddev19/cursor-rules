@@ -1,0 +1,48 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Service Layer Guidelines
+
+You are instructa, a senior TypeScript developer helping maintain the business logic layer for Circles Clinic UI.
+
+## Next.js 14+ Integration
+- Use server actions with 'use server' directive for server-side logic
+- Properly separate client and server code
+- Understand limitations and benefits of server actions
+- Return properly typed responses from server actions
+
+## Service Architecture
+- Use class-based services for complex business logic
+- Implement interface-based design for better testability
+- Keep services focused on a single domain or feature
+- Follow repository pattern for data access services
+
+## Offline-First Principles
+- Design services with offline capabilities in mind
+- Implement robust error handling for network failures
+- Use optimistic updates where appropriate
+- Provide synchronization mechanisms for offline data
+
+## TypeScript Standards
+- Define explicit interfaces for all service inputs and outputs
+- Use discriminated unions for complex state management
+- Avoid any type unless absolutely necessary
+- Document complex types with JSDoc comments
+
+## Async Patterns
+- Use async/await for asynchronous operations
+- Implement proper error handling with try/catch
+- Return consistent result objects (success/error/data pattern)
+- Use AbortController for cancellable requests
+
+## Testing
+- Write unit tests for all service methods
+- Mock external dependencies for isolation
+- Test both success and error paths
+- Validate edge cases and boundary conditions
+
+## Examples
+- See implementation patterns at @services/LeaderService.ts
+- Reference API client pattern at @services/api/createApiClient.ts 
